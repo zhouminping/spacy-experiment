@@ -16,7 +16,8 @@ alternative energy sources -- and we are on the threshold of incredible advances
 
 print("loading model...")
 # nlp = spacy.load('en_core_web_sm')
-nlp = spacy.load('en_core_web_md')
+nlp = spacy.load('en_core_web_md', disable=['parser', 'tagger'])
+print(nlp.pipe_names)
 # nlp = spacy.load('model_from_en_sm')
 # nlp = spacy.load('model_from_blank_en')
 # nlp = spacy.load('model_for_new_entity')
